@@ -12,54 +12,75 @@
       crossorigin="anonymous"
     />
     <title>Quiz</title>
+    <h1>7st Random frågor</h1>
   </head>
   <body>
-    <div id="Fråga1">
+    <div class="div" id="Fråga1">
       <h2>Uppsala är sveriges femte största stad?</h2>
-      <input type="radio" name="question1" id="questions1.1" />Sant
-      <input type="radio" name="question1" id="questions1.2" />Falsk
+      <input type="radio" name="question1" id="questions1.1" />
+      <label for="questions1.1">Sant</label>
+      <input type="radio" name="question1" id="questions1.2" />
+      <label for="questions1.2">Falskt</label>
     </div>
-    <div id="Fråga2">
+    <div class="div" id="Fråga2">
       <h2>Sverige har 21 Län?</h2>
-      <input type="radio" name="question2" id="questions2.1" />Sant
-      <input type="radio" name="question2" id="questions2.2" />Falsk
+      <input type="radio" name="question2" id="questions2.1" />
+      <label for="questions2.1">Sant</label>
+      <input type="radio" name="question2" id="questions2.2" />
+      <label for="questions2.2">Falsk</label>
     </div>
-    <div id="Fråga3">
+    <div class="div" id="Fråga3">
       <h2>Kebnekaise är sveriges högsta punkt?</h2>
-      <input type="radio" name="question3" id="questions3.1" />Sant
-      <input type="radio" name="question3" id="questions3.2" />Falsk
+      <input type="radio" name="question3" id="questions3.1" />
+      <label for="questions3.1">Sant</label>
+      <input type="radio" name="question3" id="questions3.2" />
+      <label for="questions3.2">Falsk</label>
     </div>
-    <div id="Fråga4">
+    <div class="div" id="Fråga4">
       <h2>Romerska Siffrorna IX betyder?</h2>
-      <input type="radio" name="question4" id="questions4.1" />10
-      <input type="radio" name="question4" id="questions4.2" />9
-      <input type="radio" name="question4" id="questions4.2" />11
+      <input type="radio" name="question4" id="questions4.1" />
+      <label for="questions4.1">10</label>
+      <input type="radio" name="question4" id="questions4.2" />
+      <label for="questions4.2">9</label>
+      <input type="radio" name="question4" id="questions4.2" />
+      <label for="questions4.3">11</label>
     </div>
-    <div id="Fråga5">
+    <div class="div" id="Fråga5">
       <h2>Hockeyspelaren, Wayne Gretzkys Nummer?</h2>
-      <input type="radio" name="question5" id="questions5.1" />27
-      <input type="radio" name="question5" id="questions5.2" />59
-      <input type="radio" name="question5" id="questions5.3" />99
+      <input type="radio" name="question5" id="questions5.1" />
+      <label for="questions5.1">27</label>
+      <input type="radio" name="question5" id="questions5.2" />
+      <label for="questions5.2">59</label>
+      <input type="radio" name="question5" id="questions5.3" />
+      <label for="questions5.3">99</label>
     </div>
-    <div id="Fråga6">
+    <div class="div" id="Fråga6">
       <h2>Hur många rutor finns det på en shackbräda?</h2>
-      <input type="radio" name="question6" id="questions6.1" />49
-      <input type="radio" name="question6" id="questions6.2" />64
-      <input type="radio" name="question6" id="questions6.3" />81
+      <input type="radio" name="question6" id="questions6.1" />
+      <label for="questions6.1">49</label>
+      <input type="radio" name="question6" id="questions6.2" />
+      <label for="questions6.2">64</label>
+      <input type="radio" name="question6" id="questions6.3" />
+      <label for="questions6.3">81</label>
     </div>
-    <div id="Fråga7">
+    <div class="div" id="Fråga7">
       <h2>
         Vilka av följande uppfinningar är svenska? Flera alternativ är rätt!
       </h2>
-      <input type="checkbox" name="question7" id="questions7.1" />Blixtlås
-      <input type="checkbox" name="question7" id="questions7.2" />Pacemaker
-      <input type="checkbox" name="question7" id="questions7.3" />Kompass
-      <input type="checkbox" name="question7" id="questions7.4" />Skridskor
+      <input type="checkbox" name="question7" id="questions7.1" />
+      <label for="questions7.1">Blixtlås</label>
+      <input type="checkbox" name="question7" id="questions7.2" />
+      <label for="questions7.2">Pacemaker</label>
+      <input type="checkbox" name="question7" id="questions7.3" />
+      <label for="questions7.3">Kompass</label>
+      <input type="checkbox" name="question7" id="questions7.4" />
+      <label for="questions7.4">Skridskor</label>
     </div>
     <p id="message"></p>
     <div>
       <button id="results" class="btn btn-secondary">Get results!</button>
     </div>
+
     <button id="colorMode" class="btn btn-info">Dark mode</button>
     <script src="main.js"></script>
   </body>
