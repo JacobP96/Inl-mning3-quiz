@@ -1,4 +1,5 @@
-// Knappar till att ändra bakgrundsfärg och text. 
+
+// Knapp till att ändra bakgrundsfärg och text från lightmode till darkmode
 let darkMode = document.querySelector("#colorMode");
 
 darkMode.addEventListener("click", () => {
@@ -20,6 +21,7 @@ let buttonResult = document.querySelector("#results");
 // ränkar ihop poängen
 let ammoutOfPoints = 0;
 
+// När man klickar på resultatkanppen så räknar den ihop antal poäng du samlat ihop
 buttonResult.addEventListener("click", () => {
   // Fråga 1
   if (document.getElementById("questions1.2").checked) {
@@ -124,8 +126,11 @@ buttonResult.addEventListener("click", () => {
   } else if (ammoutOfPoints < 4) {
     message.style.color = "red";
   }
+  
 
+// gör att resultatknappen bara går att använda 1 gång
   document.getElementById("results").disabled = true;
-  message.innerHTML = `<h3>You have scored ${ammoutOfPoints} points!</h3>`;
+  // Skriver ut resultatet i DOM:en
+  message.innerHTML = `<h3>You have scored ${ammoutOfPoints}/7 points!</h3>`;
 });
 
